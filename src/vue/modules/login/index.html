@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <%
+    var cdn = htmlWebpackPlugin.options.cdn || '',
+        js = htmlWebpackPlugin.files.js[0],
+        css =  htmlWebpackPlugin.files.css[0];
+  %>
+  <%=JSON.stringify(htmlWebpackPlugin.files)%>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>轻云蒜瓣</title>
+  <link href="<%=cdn %>/static/ux/element-ui/index.css" rel="stylesheet">
+  <link href="<%=cdn+css %>" rel="stylesheet">
+</head>
+
+<body style="margin:0;padding: 0;">
+    <script src="//connect.qq.com/qc_jssdk.js" data-appid="101514611"
+      data-redirecturi="https://suanbanyun.com/login.html" charset="utf-8" data-callback="true"></script>
+
+    <script src="<%=cdn %>/static/ux/vue/vue.min.js"></script>
+    <script src="<%=cdn %>/static/ux/element-ui/index.js"></script>
+    <script src="<%=cdn+js %>"></script>
+
+    <!--cache file-->
+    <iframe src="<%=cdn %>/static/data/cache.html" style="display:none;"></iframe>
+</body>
+
+</html>

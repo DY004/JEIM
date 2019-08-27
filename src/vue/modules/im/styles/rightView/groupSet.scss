@@ -1,0 +1,156 @@
+  //   群组设置的弹出框
+  .propGroup {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 350px;
+    margin-left: -175px;
+    z-index: 2000;
+    height: 450px;
+    background: #fff;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.44);
+    .paddtb {
+        padding: 0 0 10px 0;
+    }
+    .inputSpan {
+        width: 80px;
+        display: inline-block;
+    }
+    .iconColor {
+        font-size: 15px;
+        color: #ccc !important;
+        cursor: pointer;
+    }
+    .disPlayIn {
+        display: inline-block;
+    }
+    .verMiddle {
+        vertical-align: top;
+    }
+
+    .pl10 {
+        padding-left: 10px;
+    }
+    .mb20 {
+        margin-bottom: 20px;
+    }
+    .mt10 {
+        margin-top: 10px;
+    }
+    .mt20 {
+        margin-top: 20px;
+    }
+    .mt50 {
+        margin-top: 70px;
+    }
+    .colorGray {
+        color: #858585 !important;
+    }
+    .font16 {
+        font-size: 16px;
+        color: #3f3f3f;
+        font-weight: 500;
+    }
+    .textCenter {
+        text-align: center;
+    }
+    .pullRight {
+        float: right;
+    }
+    .buttonClass {
+        width: 214px;
+        height: 40px;
+        background: rgba(56, 107, 208, 1);
+        border-radius: 2px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 40px;
+        color: white;
+        font-size: 16px;
+    }
+    .EditDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .noButtonEdit {
+        background: #f2f2f2;
+        color: black;
+        font-size: 16px;
+    }
+    .subButtonEdit {
+        background: rgb(56, 107, 208);
+        color: white;
+        font-size: 14px;
+        margin-left: 40px;
+    }
+    .buttonEditClass {
+        width: 100px;
+        height: 32px;
+        border-radius: 2px;
+        line-height: 32px;
+        font-size: 14px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .groupInpuDiv {
+        margin-top: 40px;
+        padding: 0 30px;
+        .inpuDiv {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #d8d8d8;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        .inputVal {
+            padding-top: 2px;
+            padding-left: 10px;
+            border: none;
+            resize: none;
+        }
+    }
+    .propGroupTitle {
+        height: 130px;
+        padding: 20px 20px 0 20px;
+        background: rgb(69, 105, 156);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        text-align: center;
+    }
+    .imgGroupChange {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        //   background: rgba(0, 0, 0, 0.54);
+        margin: 0 auto;
+        position: relative;
+    }
+    .imgGroupBg {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.54);
+        z-index: 2;
+        font-size: 15px;
+        line-height: 80px;
+    }
+    .imgGroupNone {
+        font-size: 20px;
+        text-align: center;
+        line-height: 80px;
+        color: white;
+        background: rgb(83, 109, 254);
+    }
+    .imgGroup {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+    }
+}

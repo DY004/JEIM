@@ -1,0 +1,56 @@
+@charset'utf-8';
+
+.left-content{
+  z-index: 999;
+  border-right: 1px solid #e5e5e5;
+  background: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  @include window-border("left");
+  position: relative;
+  .ip-chat-toolbar {
+      padding: 0px;
+      .common-toolbar {
+          font-size: 14px;
+          color: $title-default-color;
+          cursor: pointer;
+          width: 50%;
+          text-align: center;
+          display: inline-block;
+      }
+      .parent-toolbar{
+          height: 36px;
+          line-height: 35px;
+          padding: 0 22px;
+          border-bottom: 1px solid #EDEDED;
+      }
+      .children-toolbar{
+          height: 32px;
+          line-height: 31px;
+          border-bottom: 1px solid #EDEDED;
+          span{
+              padding: 2px 12px;
+              line-height: 17px;
+          }
+
+      }
+      .childrenBar-active{
+          color: #546EFE;
+          background: #C6CEFD;
+          border-radius: 2px;
+      }
+      .toolbar-active {
+          @include common-active;
+      }
+  }
+  .list-chat{
+      overflow-x: hidden;
+      overflow-y: scroll;
+      flex:1;
+      overflow:-moz-scrollbars-none;
+      -ms-overflow-style:none;
+      html::-webkit-scrollbar{width:0px}
+  }
+}
+.search-container{width:264px;padding-top:13px;}

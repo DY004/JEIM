@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <%
+    var cdn = htmlWebpackPlugin.options.cdn || '',
+        config = htmlWebpackPlugin.options.config,
+        js = '/'+htmlWebpackPlugin.files.js[0],
+        css = '/'+htmlWebpackPlugin.files.css[0],
+        images = htmlWebpackPlugin.options.images;
+    images.forEach((attr)=>{
+      config[attr] && config[attr].length && cdn.length && (config[attr] = cdn+'/'+config[attr]);
+    });
+    var title = config.TITLE,
+        ico = config.ICO;
+    ['TITLE','ICO'].forEach((attr)=>{
+      delete config[attr];
+    });
+  %>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title><%=title%></title>
+  <link rel="shortcut icon" href="<%=ico%>">
+  <link href="<%=cdn %>/static/ux/element-ui/index.css" rel="stylesheet">
+  <link href="<%=cdn+css %>" rel="stylesheet">
+  <script>
+    //登录页配置
+    window.LOGIN_CONFIG = <%=JSON.stringify(config)%>
+  </script>
+</head>
+
+<body style="margin:0;padding: 0;">
+    <!-- QQ登录 -->
+    <script src="//connect.qq.com/qc_jssdk.js" data-appid="您的QQAPPID"
+      data-redirecturi="https://suanbanyun.com/login.html" charset="utf-8" data-callback="true"></script>
+
+    <script src="<%=cdn %>/static/ux/vue/vue.min.js"></script>
+    <script src="<%=cdn %>/static/ux/element-ui/index.js"></script>
+    <script src="<%=cdn+js %>"></script>
+
+    <!--cache file-->
+    <iframe src="<%=cdn %>/static/data/cache.html" style="display:none;"></iframe>
+</body>
+
+</html>

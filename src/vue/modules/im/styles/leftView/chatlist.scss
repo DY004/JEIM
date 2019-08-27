@@ -1,0 +1,128 @@
+@charset'utf-8';
+.new-list-outer {
+  .bg-click {
+    background: rgba(184, 181, 181, 0.1) !important;
+  }
+  .common-div {
+    .wr_icon {
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+      .jeicon-belldisabled{
+        font-size: 16px;
+        color: #d9d9d9;
+      }
+    }
+    .item-right{
+      position:absolute;
+      top:15px;right:10px;
+    }
+  }
+  .new-list-inner .photo-text,
+  .new-list-inner .photo-img {
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px;
+  }
+  .proupSetChange::before {
+    position: absolute;
+    bottom: -3px;
+    display: block;
+    width: 15px;
+    height: 10px;
+    content: "\A0";
+    -webkit-transform: rotate(29deg) skew(-35deg);
+    transform: rotate(130deg) skew(-35deg);
+    left: 20%;
+    background-color: #fff;
+    z-index: -1;
+    border-radius: 5px;
+  }
+  .proupSetChange {
+    z-index: 1500;
+    position: absolute;
+    width: 100px;
+    padding: 10px 10px;
+    // bottom: 40px;
+    // left: 140px;
+    background: white;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .proupSet::before {
+    position: absolute;
+    top: -3px;
+    display: block;
+    width: 15px;
+    height: 10px;
+    content: "\A0";
+    -webkit-transform: rotate(29deg) skew(-35deg);
+    transform: rotate(130deg) skew(-35deg);
+    left: 20%;
+    background-color: #fff;
+    z-index: -1;
+    border-radius: 5px;
+  }
+  .proupSet {
+    z-index: 1500;
+    position: absolute;
+    width: 100px;
+    padding: 10px 10px;
+    // bottom: -76px;
+    // left: 140px;
+    background: white;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .eventFont {
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #303030;
+  }
+  .eventFont:hover {
+    background: rgba(237, 237, 237, 0.5);
+  }
+  .iconPosation {
+    position: absolute;
+    top: -8px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #dadffa;
+    transform: rotate(45deg);
+  }
+  .fadeIn {
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      -webkit-transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+      opacity: 1;
+    }
+  }
+}

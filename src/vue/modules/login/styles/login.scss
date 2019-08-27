@@ -1,0 +1,887 @@
+.el-button {
+    border: 0 !important;
+}
+
+.el-select-dropdown {
+    z-index: 999999 !important;
+}
+
+.el-input-group__append {
+    width: 50px !important;
+}
+
+// .custom-width{
+//   input{
+//     width:255px !important;
+//   }
+// }
+body {
+    height: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+label {
+    font-weight: 700;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#app {
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+
+div:focus {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+.clearfix {
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+.app-main {
+    min-height: 100%
+}
+
+.app-container {
+    padding: 20px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+.login-container {
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    .is-error,
+    .is-success {
+        input {
+            border-color: #dcdfe6 !important;
+        }
+    }
+    .el-form-item {
+        margin-bottom: 20px;
+    } //背景图
+    .walker,
+    .login-bg {
+        position: absolute;
+        width: 100%;
+        background-size: 100% 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        img {
+            //filter: blur(20px);
+            overflow: hidden;
+        }
+
+        .login-video {
+          min-width: 100%;
+          min-height: 100%;
+          position: relative;
+          width: 100%;
+          height: auto;
+           left: 50%;
+           top: 50%;
+           transform: translate(-50%, -50%);
+          object-fit: fill;
+        }
+    }
+    .fadeOutLong {
+        filter: blur(10px);
+    }
+    .login-content {
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -217px;
+        margin-top: -260px;
+        width: 434px;
+        z-index: 99999;
+        height: 520px;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .3);
+        transition: height .3s ease .15s;
+        box-sizing: border-box;
+        border-radius: 12px;
+        /*注册*/
+        .register {
+            .register-bar {
+                position: relative;
+                margin: 25px 48px 0 48px;
+                overflow: hidden;
+                height: 35px;
+                display: table;
+                width: 338px;
+                div {
+                    font-size: 13px;
+                    color: #B9B8B8; //display: inline-block;
+                    display: table-cell;
+                }
+                p {
+                    font-size: 18px;
+                }
+                .register-bar-1,
+                .register-bar-2 {
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    font-size: 14px; // position: relative;
+                    background: #ecf0f5;
+                    color: #B5B4B4; //border-radius: 3px;
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                    padding-left: 10px;
+                }
+                .register-right-angle {
+                    width: 0px;
+                    height: 0px;
+                    *width: 15px;
+                    *height: 15px;
+                    font-size: 0;
+                    line-height: 0;
+                    overflow: hidden;
+                    border-width: 18px 0 18px 18px;
+                    border-style: dashed dashed dashed solid;
+                    border-color: transparent transparent transparent #c0d4ef;
+                    display: inline-block;
+                    position: absolute;
+                }
+                .register-angle-left{
+                 @extend .register-right-angle;
+                 border-style:solid;
+                  border-color: transparent transparent transparent #C0D4EF;
+                  left: 101px;
+                }
+                .register-angle-left-3{
+                  background:#C0D4EF ;
+                  border-color: transparent transparent transparent #ecf0f5;
+                }
+                .register-angle-left-4{
+                  background:#ecf0f5 !important;
+                  border-color: transparent transparent transparent #dfe1e3;
+                }
+                .register-angle-left-child{
+                  @extend .register-right-angle;
+                  border-style:solid;
+                  border-color: transparent transparent transparent #ecf0f5;
+                  left: 100px;
+                 }
+
+                .register-angle-right{
+                  @extend .register-right-angle;
+                  border-style:solid;
+                  border-color: transparent transparent transparent #dfe1e3;
+                  right: 89px;
+                 }
+                 .register-angle-right-3{
+                  border-color: transparent transparent transparent #c0d4ef;
+                 }
+                 .register-angle-right-child{
+                  @extend .register-right-angle;
+                  border-style:solid;
+                  border-color: transparent transparent transparent #ecf0f5;
+                  right: 91px;
+                 }
+                .register-angle-sel-right{
+                  @extend .register-right-angle;
+                  background:#C0D4EF ;
+                  border-style:solid;
+                  border-color: transparent transparent transparent #ecf0f5;
+                  right: 89px;
+                }
+
+
+
+                .register-bar-1 {
+                    width: 110px;
+                }
+                .register-bar-2 {
+                    width: 140px !important;
+                    z-index: 9;
+                }
+                .register-bar-3 {
+                    width: 115px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    font-size: 14px;
+                    background: #ecf0f5;
+                    color: #B5B4B4;
+                    border-radius: 3px;
+                }
+                .register-bar-ck {
+                    background: #C0D4EF !important;
+                    color: #3173CC !important;
+                    &:before {
+                        background: #C0D4EF !important;
+                        border-bottom: 1px solid #C0D4EF !important;
+                        border-left: 1px solid #C0D4EF !important;
+                        transform: rotate(225deg) !important;
+                    }
+                }
+                .register-bar-ck3 {
+                    background: #C0D4EF;
+                    color: #3173CC;
+                }
+            }
+            .register-form {
+                .el-select {
+                    width: 100%;
+                    .el-input__inner {
+                        padding-left: 35px;
+                    }
+                    .el-input__prefix {
+                        width: 35px;
+                        left: 0;
+                    }
+                }
+            }
+            .register-content {
+                padding-top: 0 !important;
+                .register-content-1 {
+                    padding-top: 0px !important;
+                    width: 100%;
+                    p {
+                        font-size: 14px;
+                        color: #B9B8B8;
+                    }
+                    .register-from {
+                        margin-top: 0px;
+                    }
+                    .error-bar {
+                        padding-top: 10px;
+                    }
+                }
+                .register-content-2 {
+                    padding: 10px 0 15px 0 !important;
+                    width: 100%;
+                    p {
+                        font-size: 14px;
+                        color: #B9B8B8;
+                    }
+                    .register-form {
+                        ul {
+                            padding: 0;
+                            margin: 0;
+                            max-height: 230px;
+                            width: 100%;
+                            overflow-y: auto;
+                            li {
+                                margin-left: 20px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                list-style: none;
+                                cursor: pointer;
+                                height: 45px;
+                                line-height: 45px;
+                                font-size: 16px;
+                                color: #333333;
+                                list-style: none;
+                                border-bottom: 1px solid #f2f2f2;
+                                &:hover {
+                                    color: #3173CC;
+                                }
+                                .register-login-btn {
+                                    background-color: rgba(47, 107, 207, 1);
+                                    width: 49px;
+                                    height: 25px;
+                                    color: #ffffff;
+                                    padding: 0;
+                                    border: 0;
+                                }
+                            }
+                        }
+                        .showCompany-return {
+                            margin-top: 40px;
+                            font-size: 14px;
+                            color: #3173CC;
+                            display: block;
+                        }
+                    }
+                }
+                .register-content-3 {
+                    padding-top: 10px;
+                    width: 100%;
+                    .el-form-item {
+                        margin-bottom: 17px;
+                    }
+                    .margin-0 {
+                        margin-bottom: 0;
+                    }
+                }
+                .register-content-4 {
+                    width: 100%;
+                    .register-success {
+                        .register-success-bar {
+                            margin: 20px 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 38px;
+                                height: 38px;
+                            }
+                            span {
+                                margin-left: 5px;
+                                font-size: 20px;
+                            }
+                        }
+                        .row-bg {
+                            margin-bottom: 20px;
+                            .name-content {
+                                text-align: right;
+                                .name {
+                                    font-size: 14px;
+                                    color: #BCBCBC;
+                                }
+                            }
+                            .val {
+                                font-size: 14px;
+                                color: #515151;
+                            }
+                        }
+                    }
+                }
+                .text-align {
+                    text-align: center;
+                }
+            }
+        }
+        /*头部*/
+        .login-head {
+            height: 60px;
+            background-color: #3173cc;
+            text-align: center;
+            vertical-align: middle;
+            width: 100%;
+            line-height: 60px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            .logo {
+                // max-width: 33px;
+                height: 36px;
+                vertical-align: middle;
+            }
+            .logo-text {
+                vertical-align: middle;
+                width: 150px;
+                font-size: 24px;
+                letter-spacing: 5px;
+                color: white;
+                margin-left: 17px;
+            }
+        }
+        /*登录选中状态*/
+        .login-status {
+            padding: 10px 48px 0 48px;
+            width: 100%;
+            .login-status-content {
+                padding-bottom: 10px;
+                padding-top: 30px;
+                border-bottom: 2px solid #e4e4e4;
+                width: 100%;
+                color: #BCBCBC;
+                font-size: 0;
+                display: flex;
+                .right-login,
+                .left-login {
+                    margin-top: 10px;
+                    padding-bottom: 10px;
+                    display: inline-block;
+                    text-align: center;
+                    position: relative;
+                    flex:1;
+                    a {
+                        font-size: 18px;
+                    }
+                }
+                .left-login1{
+                    text-align: left;
+                }
+                .ck-text {
+                    color: #3173CC;
+                }
+                .left-login-hr,
+                .right-login-hr {
+                    margin-top: 10px;
+                    position: absolute;
+                    width: 100%;
+                    border-bottom: 2px solid #3173CC;
+                    padding-top: 6px;
+                    .triangle {
+                        margin: 0 auto;
+                        width: 0;
+                        height: 0;
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-bottom: 4px solid #3173cc;
+                    }
+                }
+                .right-login-hr1{
+                    padding-top: 10px;
+                    .triangle{
+                        display: none;
+                    }
+                }
+            }
+        }
+        /*登录*/
+        .login-form {
+            display: flex;
+            padding: 25px 48px 0 48px;
+            form {
+                width: 100%;
+                input {
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
+                    border-radius: 0;
+                    padding: 0; //font-size: 18px;
+                    font-size: 14px;
+                    &:hover,
+                    &:active,
+                    &:visited,
+                    &:link,
+                    &:focus {
+                        border-bottom: 1px solid #dcdfe6 !important;
+                        border-color: #dcdfe6 !important;
+                    }
+                }
+                .el-input-group__prepend,
+                .el-input-group__append {
+                    background-color: #ffffff;
+                    color: #909399;
+                    padding: 0;
+                    text-align: center;
+                    border-left: 0;
+                    border-top: 0;
+                    border-radius: 0;
+                    border-right: 0; //width: 56px;
+                    width: 35px;
+                    .getValidate {
+                        background-color: rgba(47, 107, 207, 1);
+                        width: 49px;
+                        height: 25px;
+                        line-height: 25px;
+                        color: #ffffff;
+                        padding: 0;
+                    }
+                }
+                .login-bar {
+                    text-align: right;
+                    margin-bottom: 25px;
+                    padding-top: 0px;
+                    a {
+                        //margin-left: 10px;
+                        color: #3173CC !important;
+                        font-size: 14px !important;
+                        font-weight: normal !important;
+                    }
+                    .el-checkbox__label {
+                        color: #3173CC !important;
+                        font-size: 14px !important;
+                        font-weight: normal !important;
+                    }
+                    a {
+                        color: #D7D7D7;
+                    }
+                    .el-checkbox{
+                        margin-right: 0;
+                    }
+                    .is-checked {
+                        .el-checkbox__inner {
+                            background-color: #3171c9;
+                            border-color: #3171c9;
+                        }
+                    }
+                    .hr {
+                        color: #dcdfe6;
+                    }
+                }
+            }
+            .error-bar {
+                font-size: 14px;
+                text-align: center;
+                color: #FF3636;
+                padding-top: 8px;
+                span {
+                    display: block;
+                    height: 16px;
+                }
+            }
+            .update-success-content {
+                text-align: center;
+                margin-top: 120px;
+                width: 100%;
+                .update-success-text {
+                    font-size: 20px;
+                    color: #3173CC;
+                    font-weight: bold;
+                }
+                .update-success-return {
+                    font-size: 14px;
+                    color: #3173cc;
+                }
+            }
+        }
+        /*显示公司*/
+        .showCompany {
+            padding-top: 30px;
+            padding-left: 48px;
+            padding-bottom: 40px;
+            overflow: hidden;
+            .showCompany-header {
+                font-size: 20px;
+                color: #3173CC;
+                font-weight: bold;
+            }
+            ul {
+                margin-left: 0;
+                padding-left: 20px;
+                padding-right: 25px;
+                max-height: 220px;
+                width: 105%;
+                overflow-y: auto;
+                li {
+                    &:hover {
+                        color: #3173CC;
+                    }
+                    cursor: pointer;
+                    height: 45px;
+                    line-height: 45px;
+                    font-size: 16px;
+                    color: #333333;
+                    list-style: none;
+                    border-bottom: 1px solid #f2f2f2;
+                }
+            }
+            .showCompany-return {
+                margin-top: 40px;
+                font-size: 14px;
+                color: #3173CC;
+                display: block;
+            }
+        } //忘记密码
+        .showCompany-pwd {
+            padding-bottom: 40px;
+            .showCompany-header {
+                font-size: 20px;
+                color: #3173CC;
+                font-weight: bold;
+            }
+            width: 100%;
+            ul {
+                margin-left: 0;
+                padding-left: 20px;
+                max-height: 265px;
+                width: 100%;
+                overflow-y: auto;
+                li {
+                    &:hover {
+                        color: #3173CC;
+                    }
+                    cursor: pointer;
+                    height: 45px;
+                    line-height: 45px;
+                    font-size: 16px;
+                    color: #333333;
+                    list-style: none;
+                    border-bottom: 1px solid #f2f2f2;
+                }
+            }
+            .showCompany-return {
+                margin-top: 40px;
+                font-size: 14px;
+                color: #3173CC;
+                display: block;
+            }
+        }
+        /*快捷登录*/
+        .quick-login {
+            margin-top: 15px;
+            .quick-login-header {
+                text-align: center;
+                p {
+                    font-size: 16px;
+                    color: #3173CC;
+                }
+                span {
+                    font-size: 14px;
+                    color: #B9B8B8;
+                }
+            }
+            .quick-login-icon {
+                ul {
+                    margin: 0;
+                    padding: 0 48px 0 48px;
+                    li {
+                        margin-top: 40px;
+                        text-align: center;
+                        list-style: none;
+                        text-align: center;
+                        display: inline-block;
+                        width: 24%;
+                        img {
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 54px;
+                            height: 54px;
+                            display: block;
+                            margin-bottom: 10px;
+                        }
+                        span {
+                            color: #2F6ACF;
+                            font-size: 13px;
+                        } //margin-right: 25px;
+                    }
+                }
+                margin-bottom: 70px;
+            }
+            .qr-code {
+                .header {
+                    color: #B5B4B4;
+                    font-size: 14px;
+                }
+                #qr_container {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+            .qr-timeout {
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                background: #f2f2f2;
+                opacity: 0.8;
+                position: absolute;
+                top: 46px;
+                transform: translate(-50%);
+                left: 50%;
+            }
+        }
+        .login_qrcode_content {
+            margin-top: 0px !important;
+        } //找回密码
+        .find-pwd-form {
+            .find-pwd-head {
+                text-align: center;
+                margin-bottom: 40px;
+                .find-pwd-text {
+                    font-size: 20px;
+                    color: #3173CC;
+                    text-align: center;
+                    font-weight: bold;
+                }
+                .find-pwd-title {
+                    font-size: 13px;
+                    color: #BCBCBC;
+                }
+            }
+            .find-pwd-error {
+                margin-top: 60px;
+            }
+        } //密码强度
+        .pwd-strength {
+            margin-left: 20px;
+            position: relative;
+            margin-top: -3px;
+            .find-pwd-text {
+                font-size: 16px;
+                color: #B9B8B8;
+                text-align: center;
+            }
+            .find-pwd-title {
+                font-size: 12px;
+                color: #B5B5B5;
+            }
+            .margin0 {
+                margin-left: 0;
+            }
+            .pwd-strength-border {
+                display: inline-block;
+                width: 50px;
+                height: 3px;
+                background-color: rgba(215, 215, 215, 1);
+            }
+            .pwd-strength-1 {
+                background-color: rgba(215, 215, 215, 1);
+            }
+        }
+        .el-form-item__error {
+            color: #f56c6c;
+            font-size: 14px;
+            line-height: 1;
+            padding-top: 4px;
+            position: absolute;
+            top: 100%;
+            left: 60px;
+        }
+        .level3 {
+            background-color: #4f7a0d !important;
+        }
+        .level2 {
+            background-color: #e1806c !important;
+        } //按钮
+        .login-btn,
+        .common-btn {
+            height: 50px;
+            width: 100%;
+            background-color: #3173cc;
+            box-sizing: border-box;
+            border-radius: 6px; //box-shadow: none;
+            font-size: 18px;
+            color: #ffffff;
+            letter-spacing: 4px;
+            margin-top: 15px;
+            &:hover {
+                background-color: #3576D4;
+                box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.1), 0 17px 50px 0 rgba(0, 0, 0, 0.18);
+            }
+        }
+        .after-btn,
+        .submit-btn {
+            height: 50px;
+            width: 140px;
+            background-color: #3173cc;
+            border-radius: 6px;
+            font-size: 18px;
+            color: #ffffff;
+            letter-spacing: 4px;
+            margin-top: 20px;
+            box-sizing: border-box;
+            box-shadow: none;
+            border: 0;
+        }
+        .after-btn {
+            background-color: #ecf0f5;
+            color: #B5B4B4;
+        } //底部文字
+        .footer-text {
+            position: absolute;
+            bottom: 50px;
+            text-align: center;
+            width: 100%;
+            a {
+                color: #5E5E5E;
+                font-size: 14px;
+                &:hover {
+                    color: #3173cc;
+                }
+            }
+        } //距离
+        .padding-right96 {
+            padding-right: 96px;
+        }
+        .marginBottom15 {
+            margin-bottom: 15px !important;
+        }
+        .margin-bottom5 {
+            margin-bottom: 5px !important;
+        }
+        .marginBottom45 {
+            margin-bottom: 40px;
+        }
+        .margin-bottom0 {
+            margin-bottom: 0;
+        }
+    }
+    //滑动解锁
+    .drag_verify {
+        border-radius: 23px!important;
+        margin:15px 0;
+        .dv_progress_bar {
+            border-radius:23px 0 0 23px!important;
+        }
+        .dv_handler {
+            border-radius: 50%!important;
+            top: 0px!important;
+            height:32px!important;
+            width: 32px!important;
+        }
+        .dv_handler::after{
+            background: #3173CC;
+        }
+        .dv_text{
+            background: -webkit-gradient(linear,left top,right top,color-stop(0, #4d4d4d),color-stop(0.4, #4d4d4d),color-stop(0.5, white),color-stop(0.6, #4d4d4d),color-stop(1, #4d4d4d));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-size-adjust: none;
+            -webkit-animation: slidetounlock 5s infinite;
+            color: #696969!important;
+        }
+        .el-icon-circle-check{
+            color: #9FD86F;
+            font-size: 26px!important;
+            line-height: 30px!important;
+        }
+        .el-icon-d-arrow-right1{
+            width: 25px;
+            height:24px;
+            border-radius: 50%;
+            background: #3171c9;
+            margin: 3px auto;
+        }
+        @-webkit-keyframes slidetounlock {
+            0% {background-position: -200px 0;}
+            100%{background-position: 200px 0;}
+        }
+    }
+}

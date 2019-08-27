@@ -1,0 +1,32 @@
+@charset'utf-8';
+
+/*mixin*/
+@mixin window-border($location) {
+    @if $location=='left' {
+      border-top-left-radius: $window-border;
+      border-bottom-left-radius: $window-border;
+    }
+  
+    @if $location=='right' {
+      border-top-right-radius: $window-border;
+      border-bottom-right-radius: $window-border;
+    }
+  
+    @if $location=='all' {
+      border-radius: $window-border;
+    }
+  }
+  
+  /*悬浮*/
+  @mixin common-hover {
+    cursor: pointer;
+    &:hover {
+      //color: $theme-color;
+    }
+  }
+  
+  /*选中*/
+  @mixin common-active {
+    border-bottom: 1px solid #546EFE!important;
+    color: $theme-color;
+  }

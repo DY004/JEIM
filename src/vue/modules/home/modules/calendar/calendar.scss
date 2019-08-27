@@ -1,0 +1,133 @@
+.pro-crm-home-calendar{
+    font-size: 14px;
+    min-height: 244px;
+    background: #ffffff;
+    .el-card{
+        box-shadow: none !important;
+        .el-card__header{
+            padding:12px 20px;
+        }
+    }
+
+    .calendar-show,
+    .calendar-add{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .calendar-add{
+        color:#2f6bcf;
+        float: right;
+    }
+
+    .calendar-month{
+        color:#2f6bcf;
+        text-align: center;
+        position: relative;
+        *{
+            cursor: pointer;
+            display: inline-block;
+            padding: 4px 10px;
+        }
+        .text{
+            width:100px;
+            text-align: center;
+            cursor: auto;
+        }
+        .today{
+            position: absolute;
+            right:0;
+        }
+    }
+    .calendar-days{
+        .week,.week-header{
+            padding:0;
+            margin: 4px 0;
+
+            .day{
+                width:14%;
+                color: #333333;
+                text-align: center;
+                line-height: 38px;
+                list-style-type: none;
+                display: inline-block;
+                font-size: 12px;
+            }
+        }
+        .week{
+            .day{
+                cursor: pointer;
+                position: relative;
+            }
+            .other-month{
+                color:#d0d0d0;
+            }
+            .today span,
+            .select span{
+                background: #f2f2f2;
+                border-radius: 12px;
+                padding: 2px 8px;
+            }
+            .select span{
+                color: #ffffff;
+                background: #2f6bcf;
+            }
+            .task:after{
+                position: absolute;
+                content: " ";
+                padding: 2px;
+                border-radius: 100%;
+                bottom: 3px;
+                left: 50%;
+                margin-left: -1px;
+                background: #2f6bcf;
+            }
+        }
+
+    }
+    .calendar-days.collapse{
+        .week{
+            display: none;
+        }
+        .week.select{
+            display: initial;
+        }
+    }
+    .collapse-btn{
+        margin: 10px 0;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        color: #d0d0d0;
+        cursor: pointer;
+        position: relative;
+    }
+    .calendar-tasks{
+        .task {
+            height: 32px;
+            line-height: 32px;
+            font-size: 12px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+    
+            .type {
+                margin:0 4px;
+                border-radius: 12px;
+                background: #2f6bcf;
+                color: #ffffff;
+                padding: 2px 8px;
+            }
+
+            .text {
+                color: #333333;
+                cursor: pointer;
+            }
+            .text:hover{
+                color: #2f6bcf;
+            }
+        }
+    }
+
+    
+
+}

@@ -1,0 +1,17 @@
+.DS_Store
+*.log
+
+.classpath
+.project
+*.iml
+
+package-lock.json
+/dist/
+/config/config.json
+/node_modules/
+/PRO/
+/PLUGIN/
+/dist/
+/.idea/
+/.vscode/
+.eslintrc.js
