@@ -1,7 +1,7 @@
 module.exports = {
-  remark: 'JEPAAS绿色版',
+  remark: 'JEPAAS开源版',
   cdn: '',
-  proxyServerUrl: 'http://localhost:8080', // 代理服务器地址
+  proxyServerUrl: 'http://example.jepaas.com', // 代理服务器地址
   entry: ['home', 'login', 'demoboard', 'im'], // 打包的入口
   loginConfig: { // 登录配置
     TITLE: 'JEPaaS云平台', // 名称
